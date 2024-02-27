@@ -1,0 +1,25 @@
+<div class="container">
+<button routerLink="['/mainpage','view',this.myindex]" class="btn btn-warning">Back</button>
+<form [formGroup]="editproduct" (submit)="update()">
+
+    Info:
+    <input type="text" class="form-control" formControlName="info"> <br>
+
+    Price :
+    <input type="number" class="form-control" formControlName="price"> <br>
+
+    
+    Location :
+    <input type="text" class="form-control" formControlName="location"> <br>
+
+    
+    Date :
+    <input type="date" class="form-control" formControlName="date"> <br>
+
+    
+    Image URl :
+    <input type="text" class="form-control" formControlName="img"> <br>
+
+    <button type="submit" class="btn btn-success">Update</button>
+</form>
+</div>

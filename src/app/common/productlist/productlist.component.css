@@ -1,0 +1,26 @@
+.card{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card-img-top{
+    height: 140px;
+    width: auto;
+    margin: auto;
+}
+
+.card-text{
+    height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fa{
+    float: right;
+    /* background-color: blue; */
+}
+
+.card-text:hover {
+    overflow: visible;
+  }

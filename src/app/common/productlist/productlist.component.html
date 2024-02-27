@@ -1,0 +1,15 @@
+
+<div class="card" >
+    <h3><i  class="fa fa-heart"  [ngStyle]="{'color':liked ? 'blue' : ''}" (click)="togglelike(this.index)"></i></h3>
+    <img [src]="image"  alt="..." class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{price}}</h5>
+      <p class="card-text">{{title}}</p>
+      <a class="btn btn-primary" [routerLink]="['/mainpage','view',this.index]">View product</a>
+     
+      <br><br> 
+      <small class="card-text" >{{description}}</small> 
+      <small style="float:right ;">{{date}}</small>
+      <small>{{rating}}</small>
+    </div>
+  </div>

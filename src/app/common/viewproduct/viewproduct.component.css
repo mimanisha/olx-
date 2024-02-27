@@ -1,0 +1,7 @@
+.edit{
+    background-color: aqua ;
+    color: white;
+}
+.edit:hover{
+    background-color: rgb(242, 203, 155);
+}

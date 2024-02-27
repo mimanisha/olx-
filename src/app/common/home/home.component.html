@@ -1,0 +1,22 @@
+<app-image></app-image>
+<div class="container">
+
+    <button  class="btn btn-info" style="float: right;" [routerLink]="['/mainpage','add']">Add product</button>
+    <h1>Fresh recommendations</h1>
+    <br>
+    <div class="row">
+        <div class="col-md-3"  *ngFor="let product of this._product.products;let i = index">
+            <app-productlist 
+            [index]="i"
+            [image]="product.image"
+            [price]="product.price"
+            [title]="product.title"
+            [description]="product.description"
+            [rating]="product.rating.rate"
+            
+            [date]="product.date"
+            [liked]="product.liked"
+            ></app-productlist>
+        </div>
+    </div>
+</div>

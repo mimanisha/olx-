@@ -1,0 +1,30 @@
+<button class="btn btn-outline-info" [routerLink]="['/mainpage','home']">  Back to home</button>
+<br> <br>
+<button class="btn btn-outline-danger" (click)="delete()" >Delete product</button>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <img class="image-fluid" [src]="this._product.products[this.myindex].image" alt="">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <button class="edit" [routerLink]="['/mainpage','edit',this.myindex]">Edit</button>
+                <div class="card-title">{{this._product.products[this.myindex].title}}</div>
+                <h2>{{this._product.products[this.myindex].price | currency:'INR'}}</h2>
+            </div>
+
+            
+        </div>
+
+    </div>
+</div>
+
+{{myindex}}
+
+<pre>
+    {{this._product.products[this.myindex] | json}}
+</pre>
